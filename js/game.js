@@ -18,4 +18,11 @@ function level1()
 	get("title").style.display = "none";
 	get("tooltip").style.display = "none";
 	get("option1").style.display = "none";
+	get("level1tekst").style.display = "inherit"
+	get("option2").style.display = "inherit"
+}
+
+function level2()
+{
+	
 }
