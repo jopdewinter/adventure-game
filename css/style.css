@@ -1,3 +1,8 @@
+@font-face {
+    font-family: startfont;
+    src: url(../fonts/youmurdererbb_reg.ttf);
+}
+
 * {
 	padding: 0px;
 	margin: 0px;
@@ -6,14 +11,96 @@
 body {
 	background-color: silver;
 	font-family: sans-serif;
+	background-image: url(../img/home.jpg);
+	background-size: cover;
 }
 
 #level_title {
-	font-size: 18px;
+	display: none;
+	font-size: 18px
 	color: black;		
 	font-weight: bold;
 }
 
 #level_image {
-	height: 500px;
+}
+
+h1 {
+	font-size: 100px;
+	color: black;
+	font-family: angryblue;
+	-webkit-text-stroke: 1px white;
+	position: absolute;
+	top: 80px;
+	left: 380px;
+}
+
+#startbutton {
+	position: absolute;
+	top: 450px;
+	left: 885px;
+	width: 150px;
+	border: none;
+	background: none;
+	font-family: startfont;
+	font-size: 80px;
+}
+
+#startbutton:hover {
+	background-color: rgba(181, 179, 255, 0.1);
+	border: none;
+    border-radius: 3px;
+}
+
+#option1 {
+	position: absolute;
+	top: 370px;
+	left: 700px;
+	width: 150px;
+	border: none;
+	background: none;
+	font-family: startfont;
+	font-size: 80px;
+}
+
+#option1:hover {
+	background-color: rgba(181, 179, 255, 0.1);
+	border: none;
+    border-radius: 3px;
+}
+
+#infoimg {
+	position: relative;
+	left: 1475px;
+	top: 700px;
+	width: 35px;
+	height: 35px;
+}
+
+#tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+#tooltip #tooltiptext {
+    visibility: hidden;
+    width: 170px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 560px;
+    left: 1300px;
+}
+
+#tooltip:hover #tooltiptext {
+    visibility: visible;
+}
+
+#option2 {
+	display: none;
 }
