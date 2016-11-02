@@ -7,7 +7,13 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 </head>
-<body onload="start()">
+<body onload="onLoad()">
+<div id="music">
+	<audio src="" id="srcmusic" type="audio/mpeg" autoplay hidden>
+</div>
+<div id="music1">
+	<audio src="./sounds/music1.mp3" type="audio/mpeg" autoplay loop hidden>
+</div>
 
 <h1 id="title">Late Night Home</h1>
 
@@ -23,11 +29,19 @@
 
 	<div class="nav">
 
-		<button id="option1" onclick="level1()">Start</button>
+		<button id="option1" class="" onclick="level1()">Start</button>
 
-		<button id="option2" onclick="level1()">Verder</button>
+		<button id="option2" onclick="level2()">Verder</button>
 		
-		<p id="level1tekst">Je zit een avondje tv te kijken tot plots het stroom uitvalt.</p>
+		<button id="option3" onclick=""></button>
+		
+		<p id="text"></p>
+
+		<img id="zaklamp" src="./img/zaklamp.png">
+
+		<img id="sleutels" src="./img/sleutels.png">
+
+		<div id="warning"></div>
 
 	</div>
 

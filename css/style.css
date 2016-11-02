@@ -52,7 +52,7 @@ h1 {
     border-radius: 3px;
 }
 
-#option1 {
+.option1 {
 	position: absolute;
 	top: 370px;
 	left: 700px;
@@ -63,7 +63,7 @@ h1 {
 	font-size: 80px;
 }
 
-#option1:hover {
+.option1:hover {
 	background-color: rgba(181, 179, 255, 0.1);
 	border: none;
     border-radius: 3px;
@@ -106,6 +106,42 @@ h1 {
 }
 
 #level1tekst {
+	display: none;
+	color: white;
+}
+
+#level2tekst {
+	color: white;
+	display: none;
+}
+
+#kelderbutton {
+	display: none;
+}
+
+#ladebutton {
+	display: none;
+}
+
+#zaklamp {
+	display: none;
+	height: 150px;
+	width: 200px;
+	position: absolute;
+	left: 500px;
+	top: 450px;
+}
+
+#sleutels {
+	display: none;
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	top: 450px;
+	left: 630px;
+}
+
+#level3tekst {
 	display: none;
 	color: white;
 }
