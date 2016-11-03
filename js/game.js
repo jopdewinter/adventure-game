@@ -25,6 +25,12 @@ function keyCheck()
 }
 
 //Levels
+function leveldead()
+{
+	document.body.style.background = "url(./img/dead.png)";
+	document.body.style.backgroundSize = "100%";
+}
+
 function onLoad()
 {
 	document.getElementById("option1").className = 'option1';
@@ -82,5 +88,23 @@ function level3()
 
 function level4() 
 {
-	console.log("hey");
+	document.body.style.background = "url(./img/keldertrap.jpg)";
+	document.body.style.backgroundSize = "100%";
+	get("text").style.display = "none";
+	get("option2").style.display = "none";
+	get("option3").style.display = "none";
+	get("option4").innerHTML = "Verder";
+	get("option4").setAttribute("onclick", "level5()");
+	get("option4").style.display = "inherit";
+}
+
+function level5()
+{
+	document.body.style.background = "black";
+	get("licht").style.display = "inherit";
+	get("lichttext").innerHTML = "Je ziet dat het kastje is opengebroken en is uitgeschakeld. Je moet het waar aan zetten maar dat gaat niet zonder handschoenen, want anders krijg je een stroomschok.";
+	get("lichttext").style.display = "inherit";
+	get("option4").style.display = "none";
+	get("option5").innerHTML = "Toch aan zetten zonder handschoenen";
+	get("option5").setAttribute("onclick", "leveldead");
 }
