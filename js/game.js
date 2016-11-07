@@ -1,5 +1,8 @@
+'use strict'
+
 //Variables
 let key = false;
+let gloves = false;
 let removedMusic = false;
 
 // Shortcuts
@@ -20,7 +23,24 @@ function keyCheck()
 	if (key == true) {
 		level4();
 	} else {
-		get("warning").innerHTML = "Je hebt nog geen sleutel blyat";
+		get("warning").innerHTML = "Je hebt nog geen zaklamp!";
+		get("warning").style.display = "inherit";
+	}
+}
+
+function takeGloves() 
+{
+	gloves = true;
+	get("handschoenen").style.display = "none";
+}
+
+function glovesCheck()
+{
+	if (gloves == true) {
+		level7();
+	} else {
+		get("warning").innerHTML = "Je hebt nog geen handschoenen!";
+		get("warning").style.display = "inherit";
 	}
 }
 
@@ -29,12 +49,33 @@ function leveldead()
 {
 	document.body.style.background = "url(./img/dead.png)";
 	document.body.style.backgroundSize = "100%";
+	get("licht").style.display = "none";
+	get("text").style.display = "none";
+	get("lichttext").style.display = "none";
+	get("option2").style.display = "none";
+	get("option3").innerHTML = "Probeer opnieuw";
+	get("option3").setAttribute("onclick", "location.reload()");
+	get("option3").style.display = "inherit";
+	get("option4").style.display = "none";
+	get("warning").style.display = "none";
+}
+
+function leveldead2()
+{
+	document.body.style.background = "url(./img/dead.png)";
+	document.body.style.backgroundSize = "100%";
+	get("text").innerHTML = "De dief had een pistool en schoot je neer.";
+	get("option3").innerHTML = "Probeer opnieuw";
+	get("option3").setAttribute("onclick", "location.reload()");
+	get("option3").style.display = "inherit";
+	get("option2").style.display = "none";
 }
 
 function onLoad()
 {
 	document.getElementById("option1").className = 'option1';
 	get("option3").style.display = "none";
+	get("warning").style.display = "none";
 }
 
 function level1()
@@ -74,7 +115,7 @@ function level2()
 function level3()
 {	
 	removedMusic = true;
-	get("warning").innerHTML = "";
+	get("warning").style.display = "none";
 	document.body.style.background = "url(./img/lade.jpg)";
 	document.body.style.backgroundSize = "100%";
 	get("zaklamp").style.display = "inherit";
@@ -93,18 +134,71 @@ function level4()
 	get("text").style.display = "none";
 	get("option2").style.display = "none";
 	get("option3").style.display = "none";
-	get("option4").innerHTML = "Verder";
-	get("option4").setAttribute("onclick", "level5()");
-	get("option4").style.display = "inherit";
+	get("option2").innerHTML = "Verder";
+	get("option2").setAttribute("onclick", "level5()");
+	get("option2").style.display = "inherit";
 }
 
 function level5()
 {
 	document.body.style.background = "black";
 	get("licht").style.display = "inherit";
-	get("lichttext").innerHTML = "Je ziet dat het kastje is opengebroken en is uitgeschakeld. Je moet het waar aan zetten maar dat gaat niet zonder handschoenen, want anders krijg je een stroomschok.";
+	get("lichttext").innerHTML = "Je ziet dat het kastje is opengebroken en het lich uitgeschakeld is. Je moet het waar aan zetten maar dat gaat niet zonder handschoenen, want anders krijg je een stroomschok.";
 	get("lichttext").style.display = "inherit";
+	get("option2").style.display = "inherit";
+	get("option2").innerHTML = "Toch aan zetten zonder handschoenen";
+	get("option2").setAttribute("onclick", "leveldead()");
+	get("option3").innerHTML = "zoek handschoenen";
+	get("option3").setAttribute("onclick", "level6()");
+	get("option3").style.display = "inherit";
+	get("option4").innerHTML = "aanzetten met handschoenen";
+	get("option4").setAttribute("onclick", "glovesCheck()");
+	get("option4").style.display = "inherit";
+	get("handschoenen").style.display = "none";
+}
+
+function level6()
+{
+	document.body.style.background = "url(./img/opslaghandschoenen.jpg)"
+	document.body.style.backgroundSize = "100%";
+	get("licht").style.display = "none";
+	get("lichttext").style.display = "none";
+	get("option2").innerHTML = "Terug";
+	get("option2").setAttribute("onclick", "level5()");
+	get("option3").style.display = "none";
+	get("handschoenen").style.display = "inherit";
+	get("handschoenen").setAttribute("onclick", "takeGloves()");
 	get("option4").style.display = "none";
-	get("option5").innerHTML = "Toch aan zetten zonder handschoenen";
-	get("option5").setAttribute("onclick", "leveldead");
+	get("warning").style.display = "none";
+}
+
+function level7()
+{
+	document.body.style.background = "url(./img/opslaghandschoenen.jpg)";
+	document.body.style.backgroundSize = "100%";
+	get("text").innerHTML = "je hoort iemand in de keuken en gaat er naar toe.";
+	get("text").style.display = "inherit";
+	get("option2").innerHTML = "Verder";
+	get("option2").setAttribute("onclick", "level8()");
+	get("licht").style.display = "none";
+	get("option3").style.display = "none";
+	get("option4").style.display = "none";
+	get("lichttext").style.display = "none";
+}
+
+function level8()
+{
+	document.body.style.background = "url(./img/lade.jpg)";
+	document.body.style.backgroundSize = "100%";
+	get("text").innerHTML = "Je kijkt in de la en ziet dat de auto sleutels gestolen zijn. Op dat moment hoor je iemand de voordeur uit rennen. Je hebt de keuze om achter de dief aan te rennen of de politie bellen.";
+	get("option2").innerHTML = "Bel de politie";
+	get("option2").setAttribute("onclick", "level9()");
+	get("option3").innerHTML = "Ren achter de dief aan";
+	get("option3").setAttribute("onclick", "leveldead2()");
+	get("option3").style.display = "inherit";
+}
+
+function level9()
+{
+	
 }

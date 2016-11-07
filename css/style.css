@@ -35,17 +35,6 @@ h1 {
 	left: 380px;
 }
 
-#startbutton {
-	position: absolute;
-	top: 450px;
-	left: 885px;
-	width: 150px;
-	border: none;
-	background: none;
-	font-family: startfont;
-	font-size: 80px;
-}
-
 #startbutton:hover {
 	background-color: rgba(181, 179, 255, 0.1);
 	border: none;
@@ -157,4 +146,26 @@ h1 {
 #lichttext {
 	display: none;
 	color: white;
+}
+
+#handschoenen {
+	display: none;
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	top: 330px;
+	left: 1350px;
+}
+
+#option4 {
+	display: none;
+}
+
+#warning {
+	background: rgba(255,255,255,0.6);
+	padding: 25px;
+}
+
+#text {
+	color: red;
 }
