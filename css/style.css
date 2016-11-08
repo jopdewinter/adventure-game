@@ -41,6 +41,11 @@ h1 {
     border-radius: 3px;
 }
 
+#lichttext {
+	display: none;
+	color: blue;
+}
+
 .option1 {
 	position: absolute;
 	top: 370px;
@@ -143,10 +148,7 @@ h1 {
 	display: none;
 }
 
-#lichttext {
-	display: none;
-	color: white;
-}
+
 
 #handschoenen {
 	display: none;
@@ -167,5 +169,30 @@ h1 {
 }
 
 #text {
-	color: red;
+	color: blue;
+}
+
+#politieauto1 {
+	display: none;
+	position: absolute;
+	top: 550px;
+	left: 70px;
+}
+
+#politieauto2 {
+	display: none;
+	position: absolute;
+	top: 550px;
+	left: 1200px;
+	width: 250px;
+	height: 150px;
+}
+
+#dief {
+	display: none;
+	position: absolute;
+	top: 520px;
+	left: 700px;
+	width: 80px;
+	height: 80px;
 }

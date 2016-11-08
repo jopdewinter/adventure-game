@@ -143,7 +143,7 @@ function level5()
 {
 	document.body.style.background = "black";
 	get("licht").style.display = "inherit";
-	get("lichttext").innerHTML = "Je ziet dat het kastje is opengebroken en het lich uitgeschakeld is. Je moet het waar aan zetten maar dat gaat niet zonder handschoenen, want anders krijg je een stroomschok.";
+	get("lichttext").innerHTML = "Je ziet dat het kastje is opengebroken en de stroom uitgeschakeld is. Je moet het weer aan zetten maar dat gaat niet zonder handschoenen, want anders krijg je een stroomschok.";
 	get("lichttext").style.display = "inherit";
 	get("option2").style.display = "inherit";
 	get("option2").innerHTML = "Toch aan zetten zonder handschoenen";
@@ -200,5 +200,13 @@ function level8()
 
 function level9()
 {
-	
+	document.body.style.background = "url(./img/voortuin.jpg)";
+	document.body.style.backgroundSize = "100%";
+	get("text").innerHTML = "De politie was snel gearriveerd en arresteerde de dief. Je hebt de juiste keuze's gemaakt en het spel uitgepeeld!";
+	get("option2").innerHTML = "Speel opnieuw";
+	get("option2").setAttribute("onclick", "location.reload()");
+	get("option3").style.display = "none";
+	get("politieauto1").style.display = "inherit";
+	get("politieauto2").style.display = "inherit";
+	get("dief").style.display = "inherit";
 }
