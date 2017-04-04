@@ -1,7 +1,7 @@
 # adventure-game
 Je maakt met behulp van Javascript een Adventure Game.
 
-###Functionele eisen
+### Functionele eisen
 Functionele eisen beschrijven welke functionaliteit je eindproduct moet bevatten. 
 
 Deze opdracht moet aan de volgende functionele eisen voldoen:
@@ -16,7 +16,7 @@ Deze opdracht moet aan de volgende functionele eisen voldoen:
 
 Je kunt bij het verzinnen van het verhaal denken aan een "Escape Room" of een spel zoals "Myst".
 
-###Technische eisen
+### Technische eisen
 Technische eisen beschrijven aan welke vakgerichte voorwaarden de opdracht moet voldoen. 
 
 Wie ben ik moet aan de volgende technische eisen voldoen:
@@ -28,12 +28,6 @@ Wie ben ik moet aan de volgende technische eisen voldoen:
 * je past de stylesheet aan om het spel een eigen "look & feel" te geven;
 * het hele spel vindt plaats zonder de complete pagina te herladen (je mag dus geen links <a> gebruiken);
 
-###Bonus
+### Bonus
 * Gebruik een onload event om iets voor elkaar te krijgen op het moment dat de spelpagina helemaal is geladen (denk aan een animatie starten of een geluid afspelen);
 * Maak een minigame om een aanval te ontwijken (je kunt met verschillende toetsen heen en weer bewegen);
-
-###Aanvullende bronnen
-
-
-
-
