@@ -1,7 +1,7 @@
 // javascript library for simple game development
 
 document.getElementById('option1').innerHTML = 'Dit is de keuze';
-document.getElementById('level_title').innerHTML = 'Start het spelletje';
+document.getElementById('level_title').innerHTML = 'Start de game';
 
 var HasKey = false;
 
