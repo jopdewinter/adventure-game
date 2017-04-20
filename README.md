@@ -1,5 +1,5 @@
 # adventure-game
-Je maakt met behulp van Javascript een Adventure Game.
+Je maakt met behulp van Javascript een coole Adventure Game.
 
 ### Functionele eisen
 Functionele eisen beschrijven welke functionaliteit je eindproduct moet bevatten. 
