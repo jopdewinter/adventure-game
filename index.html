@@ -1,30 +1,64 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Adventure Game</title>
-	<link href="css/style.css" rel="stylesheet">
-
-</head>
-<body>
-
-<main>
-
-	<section id="status"></section>
-
-	<section id="level_title">Start</section>
-
-	<nav>
-
-		<button id="option1" onclick="javascript:Level1()">Optie 1</button>
-		<button id="option2">Optie 2</button>
-		<button id="option3">Optie 3</button>
-
-	</nav>
-
-	<img id="level_image" class="level_image" src="img/rpg.png">
-
-</main>
-
-	<script src="js/game.js" type="text/javascript" ></script>
-</body>
+		<head>
+			<title>Adventure Game</title>
+			<link href="css/style.css" rel="stylesheet">
+			<script src="js/game.js" type="text/javascript" ></script>
+			<!-- <audio controls autoplay style="display:none;"> -->
+		  <source src="img/scary.mp3" type="audio/mpeg">
+			</audio>
+		</head>
+	<body>
+	<main id="main">
+		<section id="status"></section>
+		<section id="level_title">Je word wakker in een donkere cel, eerst maar eens op staan.</section>
+			<nav>
+				<button id="button1" class="button1" onclick="javascript:Level1()">Sta op</button>
+				<button id="button2" class="button2" onclick="javascript:Level2()">Roep om hulp.</button>
+				<button id="button3" class="button3" onclick="javascript:Level3()">Inspecteer het slot.</button>
+				<button id="button4" class="button4" onclick="javascript:Level4()">Breek de spijlen open en kruip uit de kooi.</button>
+				<button id="button5" class="button5" onclick="javascript:Level5()">Forceer het slot open.</button>
+				<button id="button6" class="button6" onclick="javascript:Level6()">Breek de spijlen open en kruip uit de kooi.</button>
+				<button id="button7" class="button7" onclick="javascript:Level7()">Forceer het slot open.</button>
+				<button id="button8" class="button8" onclick="javascript:Level8()">Pak een van de spijlen om de bewaker te slaan.</button>
+				<button id="button9" class="button9" onclick="javascript:Level9()">Sla de bewaker met je vuist.</button>
+				<button id="button10" class="button10" onclick="javascript:Level10()">Breek alsnog een van de spijlen af om als wapen te kunnen gebruiken.</button>
+				<button id="button11" class="button11" onclick="javascript:Level11()">Val de slapende bewaker van achter aan.</button>
+				<button id="button12" class="button12" onclick="javascript:Level12()">Sluip langs de bewaker richting de deur.</button>
+				<button id="button13" class="button13" onclick="javascript:Level13()">Val de slapende bewaker van achter aan. </button>
+				<button id="button14" class="button14" onclick="javascript:Level14()">Sluip langs de bewaker richting de deur.</button>
+				<button id="button15" class="button15" onclick="javascript:Level15()">Dood de bewaker.</button>
+				<button id="button16" class="button16" onclick="javascript:Level16()">Loop naar de deur.</button>
+				<button id="button17" class="button17" onclick="javascript:Level17()">Open het slot.</button>
+				<button id="button18" class="button18" onclick="javascript:Level18()">Kijk bij de cel of daar een sleutel is.</button>
+				<button id="button19" class="button19" onclick="javascript:Level19()">Open het slot.</button>
+				<button id="button20" class="button20" onclick="javascript:Level20()">Kijk bij de cel of daar een sleutel is.</button>
+				<button id="button21" class="button21" onclick="javascript:Level21()">Open het slot.</button>
+				<button id="button22" class="button22" onclick="javascript:Level22()">Kijk bij de cel of daar een sleutel is.</button>
+				<button id="button23" class="button23" onclick="javascript:Level23()">Open het slot.</button>
+				<button id="button24" class="button24" onclick="javascript:Level24()">Kijk bij de cel of daar een sleutel is.</button>
+				<button id="button25" class="button25" onclick="javascript:Level25()">Open het slot.</button>
+				<button id="button26" class="button26" onclick="javascript:Level26()">Kijk bij de cel of daar een sleutel is.</button>
+				<button id="button27" class="button27" onclick="javascript:Level27()">Ga terug naar de deur.</button>
+				<button id="button28" class="button28" onclick="javascript:Level28()">Ga terug naar de deur.</button>
+				<button id="button29" class="button29" onclick="javascript:Level29()">Ga terug naar de deur.</button>
+				<button id="button30" class="button30" onclick="javascript:Level30()">Ga terug naar de deur.</button>
+				<button id="button31" class="button31" onclick="javascript:Level31()">Ga terug naar de deur.</button>
+				<button id="button32" class="button32" onclick="javascript:Level32()">Ga terug naar de bewaker.</button>
+				<button id="button33" class="button33" onclick="javascript:Level33()">Ga terug naar de bewaker.</button>
+				<button id="button34" class="button34" onclick="javascript:Level34()">Ga terug naar de bewaker.</button>
+				<button id="button35" class="button35" onclick="javascript:Level35()">Ga terug naar de bewaker.</button>
+				<button id="button36" class="button36" onclick="javascript:Level36()">Ga terug naar de bewaker.</button>
+			</nav>
+		<img id="key" class="key" src="img/key.png">
+		<img id="life" class="life" src="img/lifebar.png">
+		<img id="over" class="over" src="img/gameover.png">
+		<img id="lifehurt" class="lifehurt" src="img/lifebarhurt.png">
+		<img id="level_image" class="level_image" src="img/a.png">
+		<img id="glasses" class="glasses" onclick=" document.getElementById('main').style.opacity=1;document.getElementById('glasses').style.display = 'none';" src="img/glasses.png">
+	</main>
+		<footer>
+	        <p>© Made by Kevin Kraaijveld</p>
+	  </footer>
+	</body>
 </html>
