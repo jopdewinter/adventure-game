@@ -97,185 +97,19 @@ img#glasses:hover{
 	transition: 1s ease;
 }
 
-#button1{
+#button0{
 	display: inline-block;
-	top:250px;
-	left:600px;
+	top: 250px;
+	left: 600px;
+}
+#button1{
+	display: none;
 }
 #button2{
 	display: none;
-	top:400px;
-	right:70px;
 }
 #button3{
 	display: none;
-	top:275px;
-	left:600px;
-}
-#button4{
-	display: none;
-	top:350px;
-	left:30px;
-}
-#button5{
-	display: none;
-	top:260px;
-	left:550px;
-}
-#button6{
-	display: none;
-	top:350px;
-	left:30px;
-}
-#button7{
-	display: none;
-	top:260px;
-	left:550px;
-}
-#button8{
-	display: none;
-	top:400px;
-	right:200px;
-}
-#button9{
-	display: none;
-	top:400px;
-	left:350px;
-}
-#button10{
-	display: none;
-	bottom:25px;
-	left:600px;
-}
-#button11{
-	display: none;
-	top:250px;
-	right:50px;
-}
-#button12{
-	display: none;
-	top:350px;
-	left:30px;
-}
-#button13{
-	display: none;
-	top:250px;
-	right:50px;
-}
-#button14{
-	display: none;
-	top:350px;
-	left:30px;
-}
-#button15{
-	display: none;
-	top:200px;
-	left:375px;
-}
-#button16{
-	display: none;
-	top:300px;
-	right:75px;
-}
-#button17{
-	display: none;
-	top: 240px;
-	left: 565px;
-}
-#button18{
-	display: none;
-	top: 250px;
-	right: 75px;
-}
-#button19{
-	display: none;
-	top: 240px;
-	left: 565px;
-}
-#button20{
-	display: none;
-	top: 250px;
-	right: 75px;
-}
-#button21{
-	display: none;
-	top: 240px;
-	left: 565px;
-}
-#button22{
-	display: none;
-	top: 250px;
-	right: 75px;
-}
-#button23{
-	display: none;
-	top: 240px;
-	left: 565px;
-}
-#button24{
-	display: none;
-	top: 250px;
-	right: 75px;
-}
-#button25{
-	display: none;
-	top: 240px;
-	left: 565px;
-}
-#button26{
-	display: none;
-	top: 250px;
-	right: 75px;
-}
-#button27{
-	display: none;
-	left: 550px;
-  bottom: 50px;
-}
-#button28{
-	display: none;
-	left: 550px;
-  bottom: 50px;
-}
-#button29{
-	display: none;
-	left: 550px;
-  bottom: 50px;
-}
-#button30{
-	display: none;
-	left: 550px;
-  bottom: 50px;
-}
-#button31{
-	display: none;
-	left: 550px;
-  bottom: 50px;
-}
-#button32{
-	display: none;
-	top: 250px;
-	left: 75px;
-}
-#button33{
-	display: none;
-	top: 250px;
-	left: 75px;
-}
-#button34{
-	display: none;
-	top: 250px;
-	left: 75px;
-}
-#button35{
-	display: none;
-	top: 250px;
-	left: 75px;
-}
-#button36{
-	display: none;
-	top: 250px;
-	left: 75px;
 }
 
 #key{
